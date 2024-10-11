@@ -1,0 +1,310 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background-color: #001f3f; /* Midnight Blue */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 50px;
+    float: left;
+    margin-left: 20px;
+}
+
+nav {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffcc00; /* Accent Color */
+}
+
+/* Clearfix */
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Sections */
+section {
+    min-height: 100vh;
+    padding: 100px 0 50px 0; /* Adjust for fixed header */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.background {
+    background-image: url('../images/bg1.jpg'); /* Default background */
+}
+
+#about.background {
+    background-image: url('../images/bg2.jpg');
+}
+
+#services.background {
+    background-image: url('../images/bg3.jpg');
+}
+
+#contact.background {
+    background-image: url('../images/bg4.jpg');
+}
+
+/* Overlay */
+.overlay {
+    background: rgba(0, 31, 63, 0.7); /* Semi-transparent overlay */
+    color: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Features Section */
+#features {
+    background-color: #f4f4f4;
+    color: #333333;
+    padding: 60px 0;
+}
+
+#features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #001f3f;
+}
+
+.feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #333333;
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #001f3f;
+}
+
+/* Team Section */
+#team {
+    background-color: #001f3f;
+    padding: 60px 0;
+    color: #ffffff;
+}
+
+#team h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.member h3 {
+    margin-bottom: 5px;
+    color: #ffcc00;
+}
+
+/* Services Section */
+#service-details {
+    background-color: #f4f4f4;
+    color: #333333;
+    padding: 60px 0;
+}
+
+#service-details .service {
+    margin-bottom: 40px;
+}
+
+#service-details .service h2 {
+    color: #001f3f;
+    margin-bottom: 10px;
+}
+
+#service-details .service p {
+    color: #555555;
+}
+
+/* Contact Form */
+#contact-form {
+    background-color: #001f3f;
+    padding: 60px 0;
+    color: #ffffff;
+}
+
+#contact-form h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-group input {
+    height: 40px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 4px;
+    color: #001f3f;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+/* Footer */
+footer {
+    background-color: #001f3f;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-media a {
+    color: #ffcc00;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .feature-cards, .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .member {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay {
+        padding: 80px 20px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+}
