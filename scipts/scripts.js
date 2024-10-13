@@ -25,3 +25,14 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+// Show Service Description Function
+function showService(serviceId) {
+    // Remove active class from all service descriptions and buttons
+    const descriptions = document.querySelectorAll('.service-description');
+    const buttons = document.querySelectorAll('.service-btn');
+    descriptions.forEach(desc => desc.classList.remove('active'));
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // Add active class to clicked button and corresponding description
+    document.getElementById(serviceId).classList.add('active');
+    event.target.classList.add('active');
