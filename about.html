@@ -42,24 +42,44 @@
     </p>
 </section>
 
+    <!-- Our Services Section -->
+<section id="our-services" class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-container">
+        <div class="services-buttons">
+            <button class="service-btn active" onclick="showService('weddings')">Weddings</button>
+            <button class="service-btn" onclick="showService('social')">Social Events</button>
+            <button class="service-btn" onclick="showService('corporate')">Corporate Events</button>
+            <button class="service-btn" onclick="showService('mice')">MICE Events</button>
+            <button class="service-btn" onclick="showService('movies')">Movies</button>
+        </div>
+        <div class="services-description">
+            <div id="weddings" class="service-description active">
+                <h3>Weddings</h3>
+                <p>At The Eventive, weddings are more than ceremonies; they are stories brought to life through meticulous planning and impeccable execution...</p>
+            </div>
+            <div id="social" class="service-description">
+                <h3>Social Events</h3>
+                <p>Our social events are designed to bring people together in unique, fun, and memorable ways...</p>
+            </div>
+            <div id="corporate" class="service-description">
+                <h3>Corporate Events</h3>
+                <p>We specialize in organizing professional corporate events that deliver both in terms of value and experience...</p>
+            </div>
+            <div id="mice" class="service-description">
+                <h3>MICE Events</h3>
+                <p>From Meetings, Incentives, Conferences, and Exhibitions (MICE), we ensure your business needs are met...</p>
+            </div>
+            <div id="movies" class="service-description">
+                <h3>Movies</h3>
+                <p>Whether it's a premiere, screening, or any movie-related event, we handle the logistics to make it a success...</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section class="our-services">
-        <div class="services-header">
-            <h2>Our Services</h2>
-        </div>
-        <div class="service-options">
-            <div class="service-buttons">
-                <button onclick="showService('wedding')">Wedding</button>
-                <button onclick="showService('social')">Social Events</button>
-                <button onclick="showService('corporate')">Corporate Events</button>
-                <button onclick="showService('mice')">MICE Events</button>
-                <button onclick="showService('movies')">Movies</button>
-            </div>
-            <div class="service-description">
-                <div id="serviceText"></div>
-            </div>
-        </div>
-    </section>
+
+
 
     <footer>
         <div class="footer-container">
@@ -106,18 +126,7 @@
     </div>
 
     <script src="scripts/script.js"></script>
-    <script>
-        function showService(service) {
-            const serviceText = {
-                wedding: "Our wedding services include venue selection, decoration, catering, and coordination.",
-                social: "We organize social events like birthday parties, anniversaries, and family gatherings.",
-                corporate: "Our corporate services cater to conferences, meetings, and team-building events.",
-                mice: "MICE events include meetings, incentives, conferences, and exhibitions.",
-                movies: "We handle film shoots, premieres, and related events with professional planning."
-            };
-            document.getElementById("serviceText").innerText = serviceText[service];
-        }
-    </script>
+    
 </body>
 </html>
 
