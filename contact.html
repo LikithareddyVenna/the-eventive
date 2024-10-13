@@ -3,70 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE EVENTIVE - Contact</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Contact Us - The Eventive</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="container">
-            <img src="images/logo1.png" alt="THE EVENTIVE Logo" class="logo">
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png" alt="The Eventive Logo">
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="contact" class="background">
-        <div class="overlay">
-            <h1>Contact Us</h1>
-            <p>Get in touch to start planning your next event!</p>
-        </div>
+    <!-- Contact Section -->
+    <section class="contact-header">
+        <h1>Contact Us</h1>
     </section>
 
-    <section id="contact-form">
-        <div class="container">
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name:</label>
+    <!-- Main Section -->
+    <main>
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Contact Info</h2>
+                <p>Call</p>
+                <p class="contact-detail"><img src="phone.png" alt="Phone"> +91 9248755551</p>
+
+                <p>Email</p>
+                <p class="contact-detail"><img src="email.png" alt="Email"> info@theeventive.com</p>
+
+                <p>Address</p>
+                <p class="contact-detail"><img src="location.png" alt="Address"> 123 Event Street, City</p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Get In Touch</h2>
+                <form action="submit_form.php" method="POST">
+                    <label for="name">Your Name *</label>
                     <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 THE EVENTIVE. All rights reserved.</p>
-            <div class="social-media">
-                <a href="#" target="_blank">Facebook</a>
-                <a href="#" target="_blank">Instagram</a>
-                <a href="#" target="_blank">LinkedIn</a>
+                    <label for="email">Your Email *</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Mobile Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="events">Events *</label>
+                    <select id="events" name="events" required>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Social Events">Social Events</option>
+                        <option value="Corporate">Corporate</option>
+                        <option value="MICE">MICE</option>
+                        <option value="Movies">Movies</option>
+                    </select>
+
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="message">Enter your query</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn-blue">Submit</button>
+                </form>
             </div>
         </div>
-    </footer>
+    </main>
 
-    <script src="scripts/script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 The Eventive. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
+
