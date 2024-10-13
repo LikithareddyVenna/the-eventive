@@ -90,20 +90,24 @@ header::after {
 }
 
 /* About Company Section */
+
 .about-company {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text color */
     text-align: center;
     padding: 60px 20px;
-    background-color: #001f3f;
 }
 
 .about-company h2 {
     margin-bottom: 20px;
+    color: #007BFF; /* Blue color for the heading */
 }
 
 .about-company p {
     max-width: 800px;
     margin: auto;
 }
+
 
 /* Our Services Section */
 .our-services {
