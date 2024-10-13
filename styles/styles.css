@@ -147,7 +147,7 @@ header::after {
     font-size: 18px;
     cursor: pointer;
     border-radius: 30px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .service-btn.active, .service-btn:hover {
