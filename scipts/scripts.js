@@ -36,3 +36,12 @@ function showService(serviceId) {
     // Add active class to clicked button and corresponding description
     document.getElementById(serviceId).classList.add('active');
     event.target.classList.add('active');
+
+function scrollCarousel(direction) {
+    const carousel = document.querySelector('.carousel-images');
+    const scrollAmount = 300; // Adjust scroll amount as needed
+    carousel.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+    });
+}
