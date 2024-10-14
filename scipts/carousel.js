@@ -4,5 +4,5 @@ function scrollCarousel(direction) {
     carousel.scrollBy({
         left: direction * scrollAmount,
         behavior: 'smooth'
-    });
+    });  
 }
