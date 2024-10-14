@@ -3,132 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE EVENTIVE - Home</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-p+UENcXrN8QxQ3mdS2E7htzHGr4vH+O1C5ngZQypE4N+FAk1QVEG/H8ADtqN+FbfhkjZlLUFvyrT3I9D4cxjDQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>The Eventive</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="container">
-            <img src="images/logo1.png" alt="Logo of THE EVENTIVE, an event planning company" class="logo">
-            <nav aria-label="Main Navigation">
+        <div class="navbar">
+            <h1 class="logo">The Eventive</h1>
+            <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Services</a>
+                        <div class="dropdown-content">
+                            <a href="#">Weddings</a>
+                            <a href="#">Social Events</a>
+                            <a href="#">Corporate</a>
+                            <a href="#">MICE</a>
+                            <a href="#">Movies</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="background">
-        <div class="overlay">
-            <h1>Welcome to THE EVENTIVE</h1>
-            <p>Your partner in creating unforgettable events</p>
-            <a href="services.html" class="cta-button">Our Services</a>
+    <section class="carousel">
+        <div class="carousel-images">
+            <img src="photo1.jpg" alt="Event 1">
+            <img src="photo2.jpg" alt="Event 2">
+            <img src="photo3.jpg" alt="Event 3">
+            <img src="photo4.jpg" alt="Event 4">
+            <img src="photo5.jpg" alt="Event 5">
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features">
-        <div class="container">
-            <h2>Our Expertise</h2>
-            <div class="feature-cards">
-                <div class="card">
-                    <h3>Corporate Events</h3>
-                    <p>From conferences to team-building activities, we handle all aspects of corporate events.</p>
-                </div>
-                <div class="card">
-                    <h3>Weddings</h3>
-                    <p>Creating magical wedding experiences tailored to your dream day.</p>
-                </div>
-                <div class="card">
-                    <h3>Private Parties</h3>
-                    <p>Whether it's a birthday, anniversary, or any special occasion, we make it memorable.</p>
-                </div>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Vajra Events is a highly creative event designing and management company available for weddings and all events...</p>
+        <button onclick="window.location.href='about.html'">Know More</button>
+    </section>
+
+    <section class="about-founder">
+        <h2>About The Founder</h2>
+        <p>Founded by Arun, Vajra Events embarked on its journey on January 30, 2012...</p>
+        <div class="founder-photos">
+            <div class="photo">
+                <img src="member1.jpg" alt="Founder Image 1">
+                <p>Founder delivering a speech</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team">
-        <div class="container">
-            <h2>Meet Our Team</h2>
-            <div class="team-members">
-                <div class="member">
-                    <img src="images/member1.jpg" alt="Portrait of SURAVAJJULA RISHIBHI, Founder & CEO">
-                    <h3>SURAVAJJULA RISHIBHI</h3>
-                    <p>Founder & CEO</p>
-                </div>
-                <div class="member">
-                    <img src="images/member2.jpg" alt="Portrait of THARUN KUMAR CHINTHAPALLI, Event Planner">
-                    <h3>THARUN KUMAR CHINTHAPALLI</h3>
-                    <p>Event Planner</p>
-                </div>
-                <div class="member">
-                    <img src="images/member3.jpg" alt="Portrait of Balu Sujith Vakapalli, Vendor Coordinator">
-                    <h3>Balu Sujith Vakapalli</h3>
-                    <p>Vendor Coordinator</p>
-                </div>
+            <div class="photo">
+                <img src="member2.jpg" alt="Founder Image 2">
+                <p>Networking with clients</p>
+            </div>
+            <div class="photo">
+                <img src="member33.jpg" alt="Founder Image 3">
+                <p>At a recent event</p>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonial">
-                <p>"THE EVENTIVE made our corporate retreat seamless and memorable. Highly recommended!"</p>
-                <span>- Jane Doe, CEO of XYZ Corp</span>
-            </div>
-            <div class="testimonial">
-                <p>"Our wedding was a dream come true, thanks to THE EVENTIVE's impeccable planning."</p>
-                <span>- John & Emily Smith</span>
-            </div>
-            <!-- Add more testimonials as needed -->
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 THE EVENTIVE. All rights reserved.</p>
-            <div class="social-media">
-                <a href="https://facebook.com/theeventive" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://instagram.com/theeventive" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://linkedin.com/company/theeventive" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <div class="contact-info">
-                <p>Phone: (123) 456-7890</p>
-                <p>Email: contact@theeventive.com</p>
-                <p>Address: 123 Event Street, City, Country</p>
-            </div>
-            <div class="legal-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Floating Contact Icon -->
-     <div class="floating-contact">
-        <a href="contact.html">
-            <img src="images/contact-icon.png" alt="Contact Us" />
-        </a>
-    </div>
-    
-    <script src="scripts/script.js"></script>
+    <button class="contact-us">Contact Us</button>
 </body>
 </html>
-
