@@ -54,13 +54,49 @@ body {
     text-align: center;
 }
 
-.carousel-images img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+.carousel-container {
+    position: relative;
+    width: 80%;
     margin: 0 auto;
-    display: block;
+    overflow: hidden;
 }
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    scroll-behavior: smooth;
+}
+
+.carousel-images img {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 
 .about {
     padding: 20px;
