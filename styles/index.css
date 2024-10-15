@@ -170,3 +170,21 @@ body {
     background-color: #0056b3;
 }
 
+/* Footer */
+footer {
+    background-color: #001f3f;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-media a {
+    color: #ffcc00;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #ffffff;
+}
