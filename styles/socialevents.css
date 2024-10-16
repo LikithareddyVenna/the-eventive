@@ -1,0 +1,161 @@
+/* General Styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    background-color: #1E90FF; /* Blue background */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img {
+    height: 50px;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 500px;
+    background-color: #1E90FF;
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About Us Section */
+.about-us-container {
+    padding: 50px;
+    background-color: #f0f8ff;
+}
+.about-us-container h1 {
+    text-align: center;
+    color: #1E90FF;
+    font-size: 24px;
+}
+.about-us-container p {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.about-us h2 {
+    color: #1E90FF;
+}
+.about-us ul {
+    list-style-type: disc;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+.about-us img {
+    height: 250px;
+    width: auto;
+    margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #191970; /* Midnight blue */
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 20px;
+}
+
+.footer-logo {
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    object-fit:cover;
+    margin-bottom: 20px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    color: #ff69b4; /* Bright pink */
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a:hover {
+    color: #ff69b4; /* Bright pink on hover */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%); /* Make icons white */
+}
+
+.social-icons a img:hover {
+    filter: invert(60%) sepia(100%) saturate(1000%) hue-rotate(-20deg); /* Color on hover */
+}
+
+/* Contact Us Icon */
+.contact-icon {
+    background-color: #1E90FF;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+}
