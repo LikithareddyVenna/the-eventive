@@ -136,7 +136,18 @@
         </a>
     </div>
 
-    <script src="scripts/script.js"></script>
+    <script>
+        function showService(service) {
+            const descriptions = document.querySelectorAll('.service-description');
+            descriptions.forEach(desc => desc.classList.remove('active'));
+
+            const selectedDescription = document.getElementById(service);
+            if (selectedDescription) {
+                selectedDescription.classList.add('active');
+            }
+        }
+    </script>
+
     
 </body>
 </html>
