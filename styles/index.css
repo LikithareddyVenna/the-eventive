@@ -48,17 +48,11 @@ body {
     display: block;
 }
 
-.carousel {
-    background: #ccc;
-    padding: 0px;
-    text-align: center;
-}
+
 
 .carousel {
     position: relative;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -73,6 +67,8 @@ body {
     overflow-x: auto;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    width: 100%;
+    max-width: 100%;
     scrollbar-width: none; /* For Firefox */
 }
 
@@ -81,14 +77,13 @@ body {
 }
 
 .carousel-images img {
-    max-width: 100%;
+    width: 100vw;
     height: auto;
     flex-shrink: 0;
-    width: 100%;
-    min-width: 300px;
+    min-width: 100px;
 }
 
-button {
+button.prev,button.next {
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
@@ -98,13 +93,14 @@ button {
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
+    padding: 10px;
 }
 
-.prev {
+button.prev {
     left: 10px;
 }
 
-.next {
+button.next {
     right: 10px;
 }
 
@@ -129,6 +125,19 @@ button {
     font-size: 1rem;
     color: #555;
 }
+.about button {
+   padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.about button:hover {
+    background-color: #004494;
+}  
 
 .about-founder {
     display: flex;
