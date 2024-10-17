@@ -1,32 +1,67 @@
+/* General */
 body {
     font-family: Arial, sans-serif;
-    background-color: #0C1B32;
     margin: 0;
-    color: #004d73;
+    padding: 0;
 }
 
-.navbar {
-    background-color: #0C1B32;
-    padding: 1rem;
+.header-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    background-color: #0C1B32; /* Matching background color with logo */
+    padding: 10px 50px;
 }
 
-.navbar .logo {
-    height: 50px;
+header .logo img {
+    max-height: 100px; /* Adjust height to fit */
 }
 
-.navbar ul {
+nav ul {
     list-style-type: none;
     display: flex;
-    gap: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
+nav ul li {
+    margin-left: 20px;
 }
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.contact-header {
+    background-image: url('../images/wedding5.png'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Ensures the text is readable against the background */
+    text-align: center; /* Centers the text horizontally */
+}
+
+.contact-header h1 {
+    font-size: 3rem; /* Adjusts the font size for the heading */
+    margin: 0; /* Removes default margin */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow to make the text stand out */
+}
+
 
 .services-section {
     text-align: center;
