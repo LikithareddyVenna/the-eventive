@@ -94,6 +94,11 @@ nav a {
     width: auto;
     margin-left: 20px;
 }
+.event-list {
+    list-style-type: disc; /* Display bullet points */
+    margin: 20px 0; /* Space above and below */
+    padding-left: 20px; /* Indent from the left */
+}
 /* Footer */
 footer {
     background-color: #191970; /* Midnight blue */
