@@ -42,42 +42,82 @@ body {
 }
 
 .service-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    max-width: 300px;
+    background-color: #fff;
     text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
     transition: transform 0.3s ease;
-}
-   
-.service-card:hover {
-    transform: translateY(-5px);
 }
 
 .service-card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto;
+    border-radius: 10px;
 }
 
 .service-card h3 {
-    font-size: 1.5rem;
-    margin: 1rem 0;
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    color: #333;
+    margin: 20px 0 10px;
 }
 
 .service-card button {
-    background-color: #005f87;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 1rem;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ff4081;
+    background-color: transparent;
+    border: 2px solid #ff4081;
+    border-radius: 20px;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .service-card button:hover {
-    background-color: #004d73;
+    background-color: #ff4081;
+    color: #fff;
+}
+.wedding-card img {
+    border-radius: 50%; /* Circular image */
+}
+
+.wedding-card h3 {
+    color: #333;
+    font-weight: bold;
+}
+.social-card img {
+    border-radius: 50%; /* Circular image */
+}
+
+.social-card h3 {
+    color: #333;
+    font-weight: bold;
+}
+.corporate-card img {
+    border-radius: 50%; /* Circular image */
+}
+
+.corporate-card h3 {
+    color: #333;
+    font-weight: bold;
+}
+.mice-card img {
+    border-radius: 50%; /* Circular image */
+}
+
+.mice-card h3 {
+    color: #333;
+    font-weight: bold;
+}
+.movies-card img {
+    border-radius: 50%; /* Circular image */
+}
+
+.movies-card h3 {
+    color: #333;
+    font-weight: bold;
 }
 
 footer {
