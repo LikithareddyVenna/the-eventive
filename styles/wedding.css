@@ -78,16 +78,18 @@ nav a {
 }
 .about-us {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: centre;
     padding: 30px 0;
 }
 .about-us h2 {
     color: #1E90FF;
+    text-align: center;
 }
-.about-us ul {
-    list-style-type: disc;
-    margin: 20px 0;
-    padding-left: 20px;
+.about-us p {
+    text-align: center;
+    margin:20px 0;
+    max-width:800px;
 }
 .about-us img {
     height: 250px;
@@ -98,6 +100,7 @@ nav a {
     list-style-type: disc; /* Display bullet points */
     margin: 20px 0; /* Space above and below */
     padding-left: 20px; /* Indent from the left */
+    text-align: left;
 }
 /* Footer */
 footer {
