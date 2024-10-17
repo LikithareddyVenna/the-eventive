@@ -79,46 +79,7 @@ body {
     background-color: #ff4081;
     color: #fff;
 }
-.wedding-card img {
-    border-radius: 50%; /* Circular image */
-}
 
-.wedding-card h3 {
-    color: #333;
-    font-weight: bold;
-}
-.social-card img {
-    border-radius: 50%; /* Circular image */
-}
-
-.social-card h3 {
-    color: #333;
-    font-weight: bold;
-}
-.corporate-card img {
-    border-radius: 50%; /* Circular image */
-}
-
-.corporate-card h3 {
-    color: #333;
-    font-weight: bold;
-}
-.mice-card img {
-    border-radius: 50%; /* Circular image */
-}
-
-.mice-card h3 {
-    color: #333;
-    font-weight: bold;
-}
-.movies-card img {
-    border-radius: 50%; /* Circular image */
-}
-
-.movies-card h3 {
-    color: #333;
-    font-weight: bold;
-}
 
 footer {
     background-color: #191970; /* Midnight blue */
