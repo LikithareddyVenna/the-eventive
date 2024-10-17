@@ -14,35 +14,21 @@ a {
 }
 
 /* Header Styles */
-header {
-    background-color: #0C1B32; /* Blue background */
-    padding: 20px;
+/* Central Text Section */
+.central-text {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    height: 300px; /* Adjust height as needed */
+    background-color: #f0f8ff; /* Same background color as about us section */
+    padding: 20px;
+    text-align: center;
 }
-header .logo img {
-    height: 50px;
-}
-nav ul {
-    display: flex;
-    gap: 20px;
-}
-nav a {
-    color: white;
-    font-weight: bold;
-}
-
-/* Hero Section */
-.hero {
-    position: relative;
-    height: 500px;
-    background-color: #1E90FF;
-}
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.central-text-container p {
+    max-width: 800px; /* Max width for text */
+    font-size: 18px; /* Font size */
+    line-height: 1.6; /* Line height for readability */
+    margin: 0 auto; /* Center the paragraph */
 }
 
 /* About Us Section */
@@ -78,7 +64,6 @@ nav a {
     width: auto;
     margin-left: 20px;
 }
-
 /* Footer */
 footer {
     background-color: #191970; /* Midnight blue */
