@@ -124,11 +124,12 @@ body {
 }
 
 .about-us {
-    display: block;
-    padding: 50px 0; /* Adds some spacing around the section */
-    max-width: 800px; /* Ensures the content doesn't stretch too wide */
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    max-width: 1200px; /* Ensures the content doesn't stretch too wide */
     margin: 0 auto; /* Centers the content horizontally */
-    text-align: left;
+    gap: 30px;
 }
 
 .about-us h2 {
@@ -138,28 +139,34 @@ body {
    
 }
 
-.about-us p {
-    margin-right: 30px; /* Adds spacing between text and the image */
+.about-us-content {
+    flex: 1;
+    max-width: 60%; /* Adjust the width of the text section */
+}
+
+.about-us-content p {
+    margin-bottom: 20px;
     line-height: 1.6;
     font-size: 18px;
     color: #333;
 }
 
-.about-us ul {
+.about-us-content ul {
     list-style-type: disc;
+    padding-left: 20px;
     margin-top: 20px;
     font-size: 18px;
     color: #333;
+    column-count: 2; /* Split the list into two columns */
 }
 
 .about-us img {
-    flex: 1;
-    max-height: 400px;
-    width: auto; /* Ensures the image scales correctly */
-    margin-left: 30px; /* Adds space between text and image */
-    object-fit: cover; /* Ensures the image fits nicely */
-    border-radius: 10px; /* Optional: Adds rounded corners */
+    max-width: 35%; /* Ensure the image takes up an appropriate portion of the space */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
+
 
 
 /* Footer */
