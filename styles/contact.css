@@ -33,6 +33,7 @@ nav ul li a {
     color: white;
     font-size: 16px;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -44,6 +45,7 @@ nav ul li a {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .contact-header {
     background-image: url('../images/wedding5.png'); /* Replace with the path to your image */
     background-size: cover; /* Ensures the image covers the entire area */
