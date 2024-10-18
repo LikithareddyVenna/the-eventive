@@ -72,6 +72,11 @@ body {
     z-index: 10; /* Ensure visibility */
 }
 
+/* Ensure link is blue even when not hovered */
+.dropdown-content a:link, 
+.dropdown-content a:visited {
+    color: #004494; /* Blue color for dropdown links (default state) */
+}
 
 
 .carousel {
