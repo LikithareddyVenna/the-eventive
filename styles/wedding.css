@@ -77,6 +77,7 @@ body {
     color: #004494; /* Blue color for dropdown links (default state) */
 }
 
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -88,64 +89,83 @@ body {
     height: 100%;
     object-fit: cover;
 }
-/* Central Text Section */
-.central-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px; /* Adjust height as needed */
-    background-color: #f0f8ff; /* Same background color as about us section */
-    padding: 20px;
+
+/* Wedding Info Section */
+.wedding-info {
+    background-color: #f0f8ff;
+    padding: 50px;
     text-align: center;
 }
-.central-text-container p {
-    max-width: 800px; /* Max width for text */
-    font-size: 18px; /* Font size */
-    line-height: 1.6; /* Line height for readability */
-    margin: 0 auto; /* Center the paragraph */
+
+.wedding-info-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+.wedding-info h2 {
+    color: #1E90FF; /* Same blue color for headings */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.wedding-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+
 /* About Us Section */
+
 .about-us-container {
     padding: 50px;
     background-color: #f0f8ff;
 }
-.about-us-container h1 {
-    text-align: center;
-    color: #1E90FF;
-    font-size: 24px;
-}
-.about-us-container p {
-    text-align: center;
-    margin: 20px auto;
-    max-width: 800px;
-}
+
 .about-us {
     display: flex;
-    flex-direction: column;
-    align-items: centre;
-    padding: 30px 0;
+    align-items:flex-start;
+    justify-content: space-between;
+    max-width: 1200px; /* Ensures the content doesn't stretch too wide */
+    margin: 0 auto; /* Centers the content horizontally */
+    gap: 30px;
 }
+
 .about-us h2 {
     color: #1E90FF;
-    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+   
 }
-.about-us p {
-    text-align: center;
-    margin:20px 0;
-    max-width:800px;
+
+.about-us-content {
+    flex: 1;
+    max-width: 60%; /* Adjust the width of the text section */
 }
+
+.about-us-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #333;
+}
+
+.about-us-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    column-count: 2; /* Split the list into two columns */
+}
+
 .about-us img {
-    height: 250px;
-    width: auto;
-    margin-left: 20px;
+    max-width: 35%; /* Ensure the image takes up an appropriate portion of the space */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
-.event-list {
-    list-style-type: disc; /* Display bullet points */
-    margin: 20px 0; /* Space above and below */
-    padding-left: 20px; /* Indent from the left */
-    text-align: left;
-}
+
 /* Footer */
 footer {
     background-color: #191970; /* Midnight blue */
