@@ -15,8 +15,7 @@ body {
 }
 
 .logo img {
-    width: 120px; /* Adjust the logo size as needed */
-    height: auto;
+   max-height: 100px; /* Adjust height to fit */
 }
 
 .navbar nav ul {
