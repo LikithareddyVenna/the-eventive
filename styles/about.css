@@ -220,11 +220,7 @@ body {
 
 
 
-/* Floating Contact Icon */
-.floating-contact {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
+
 
 /* Sections */
 section {
@@ -260,35 +256,9 @@ section {
     text-align: center;
 }
 
-/* Floating Contact Icon */
-.floating-contact {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 1000;
-}
 
-.floating-contact a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px; /* Adjust based on your image size */
-    height: 60px; /* Adjust based on your image size */
-    background-color: #ffcc00; /* Gold Background */
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
 
-.floating-contact a:hover {
-    transform: scale(1.1);
-    background-color: #e6b800; /* Darker Gold on Hover */
-}
 
-.floating-contact img {
-    width: 80%; /* Adjust based on your icon size */
-    height: 80%; /* Adjust based on your icon size */
-}
 
 /* Features Section */
 #features {
