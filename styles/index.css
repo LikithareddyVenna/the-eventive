@@ -37,15 +37,34 @@ body {
     color: #fff;
     font-size: 1rem;
     padding: 10px 15px;
+    transation: background-color 0.3s ease;
+}
+.navbar nav ul li a:hover {
+    background-color: #ff69b4; /* Dark pink on hover */
+    color: white; /* Keep text white on hover */
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: #fff;
     min-width: 150px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding: 10px 0;
     z-index: 10; /* Ensure the dropdown is above other content */
+}
+
+.dropdown-content a {
+    padding: 10px 20px; /* Increase spacing between dropdown items */
+    color: #0C1B32; /* Dark blue text color */
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.dropdown-content a:hover {
+    background-color: #ff69b4; /* Dark pink background on hover for dropdown items */
+    color: white; /* White text on hover */
 }
 
 .dropdown:hover .dropdown-content {
