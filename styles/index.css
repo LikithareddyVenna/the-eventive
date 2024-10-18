@@ -59,12 +59,12 @@ body {
     color: #0C1B32; /* Dark blue text color */
     text-decoration: none;
     display: block;
-    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .dropdown-content a:hover {
     background-color: #ff69b4; /* Dark pink background on hover for dropdown items */
-    color: white; /* White text on hover */
+    color: #004494; /* White text on hover */
 }
 
 .dropdown:hover .dropdown-content {
