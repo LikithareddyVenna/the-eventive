@@ -125,25 +125,46 @@ body {
 
 .about-us {
     display: flex;
+    align-items: center; /* Vertically centers the content */
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 50px 0; /* Adds some spacing around the section */
+    max-width: 1200px; /* Ensures the content doesn't stretch too wide */
+    margin: 0 auto; /* Centers the content horizontally */
 }
 
 .about-us h2 {
     color: #1E90FF;
+    font-size: 36px;
+    margin-bottom: 20px;
+    width: 150px; /* Adjusted width to match the desired layout */
+}
+
+.about-us p {
+    flex: 2;
+    margin-right: 30px; /* Adds spacing between text and the image */
+    line-height: 1.6;
+    font-size: 18px;
+    color: #333;
 }
 
 .about-us ul {
     list-style-type: disc;
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-left: 20px;
+    font-size: 18px;
+    color: #333;
 }
 
 .about-us img {
-    height: 250px;
-    width: auto;
-    margin-left: 20px;
+    flex: 1;
+    max-height: 400px;
+    width: auto; /* Ensures the image scales correctly */
+    margin-left: 30px; /* Adds space between text and image */
+    object-fit: cover; /* Ensures the image fits nicely */
+    border-radius: 10px; /* Optional: Adds rounded corners */
 }
+
 
 /* Footer */
 footer {
