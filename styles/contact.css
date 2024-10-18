@@ -97,6 +97,7 @@ body {
 
 
 .contact-container {
+    background-color: #ffffff; /* White background */
     display: flex;
     justify-content: space-around;
     padding: 20px 50px;
