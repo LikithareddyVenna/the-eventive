@@ -77,25 +77,7 @@ body {
     color: #004494; /* Blue color for dropdown links (default state) */
 }
 
-  /* Header Styles */
-header {
-    background-color: #0C1B32;    /* Blue background */
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header .logo img {
-    height: 50px;
-}
-nav ul {
-    display: flex;
-    gap: 20px;
-}
-nav a {
-    color: white;
-    font-weight: bold;
-}
+
 
 /* Hero Section */
 .hero {
