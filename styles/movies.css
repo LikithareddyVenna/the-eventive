@@ -11,7 +11,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative; /* Ensure the navbar is positioned relative to its parent */
-    z-index: 2; /* Set  a base z-index to keep the navbar above most content */
+    z-index: 2;   /* Set  a base z-index to keep the navbar above most content */
 }
 
 .logo img {
