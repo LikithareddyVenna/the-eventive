@@ -204,6 +204,68 @@ button.next {
     transform: scale(1.05);
 }
 
+.our-services {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.our-services h2 {
+    font-size: 2.5rem;
+    color: #003366; /* Use your theme's blue */
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service-box {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 18%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+.service-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #003366;
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin: 20px 0;
+}
+
+.service-box .btn {
+    display: inline-block;
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.service-box .btn:hover {
+    background-color: #005599;
+}
+
+
 
 
 footer {
