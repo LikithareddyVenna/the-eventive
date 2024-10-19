@@ -98,27 +98,6 @@ body {
 }
 
 
-
-/* About Us Section */
-.about-us {
-    background-image: url('../images/bg1.jpg');
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.about-us .overlay {
-    background: rgba(0, 31, 63, 0.7); /* Semi-transparent overlay */
-    color: #ffffff;
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.about-us h1 {
-    font-size: 3em;
-}
-
 /* About Company Section */
 
 .about-company {
