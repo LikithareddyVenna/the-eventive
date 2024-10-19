@@ -225,13 +225,7 @@ footer {
     margin: 20px;
 }
 
-.footer-logo {
-    width: 80px;
-    height:80px;
-    border-radius: 50%;
-    object-fit:cover;
-    margin-bottom: 20px;
-}
+
 
 .footer-section h4 {
     font-size: 18px;
