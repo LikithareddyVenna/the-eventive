@@ -208,7 +208,6 @@ button.next {
 }
 
 
-
 footer {
     background-color: #191970; /* Midnight blue */
     color: #fff;
@@ -275,7 +274,6 @@ footer {
 .social-icons a img:hover {
     filter: invert(60%) sepia(100%) saturate(1000%) hue-rotate(-20deg); /* Color on hover */
 }
-
 /* Contact Us Icon */
 .contact-icon {
     background-color: #1E90FF;
