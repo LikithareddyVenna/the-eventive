@@ -133,6 +133,11 @@ button.prev {
 button.next {
     right: 10px;
 }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 footer {
     background-color: #191970; /* Midnight blue */
     color: #fff;
