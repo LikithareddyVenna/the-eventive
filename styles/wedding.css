@@ -133,7 +133,9 @@ button.next {
     right: 10px;
 }
 
-
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
 /* Wedding Info Section */
 .wedding-info {
