@@ -138,6 +138,72 @@ button.next {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+.about-us {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex-basis: 45%;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #003366; /* Replace with your preferred blue */
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.about-text .btn {
+    display: inline-block;
+    background-color: #003366; /* Same blue as the heading */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.about-text .btn:hover {
+    background-color: #005599; /* Slightly lighter blue for hover */
+}
+
+.about-images {
+    flex-basis: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.about-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-images img:hover {
+    transform: scale(1.05);
+}
+
 
 
 footer {
