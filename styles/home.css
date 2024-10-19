@@ -138,6 +138,75 @@ button.next {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+
+.about {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #555;
+}
+.about button {
+   padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.about button:hover {
+    background-color: #004494;
+}  
+
+.about-founder {
+    display: flex;
+    background-color: #001f3f;
+    padding: 40px;
+    color: #fff;
+    gap: 40px;
+}
+
+.about-founder h2 {
+    font-size: 2rem;
+}
+
+.about-founder p {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.founder-photos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    flex: 1;
+}
+
+.founder-photos .photo {
+    text-align: center;
+}
+
+.founder-photos img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+
 footer {
     background-color: #191970; /* Midnight blue */
     color: #fff;
