@@ -217,8 +217,10 @@ footer {
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     text-align: left;
+    align-items: center; /* Align items vertically */
+    text-align: center; /* Align text center */
 }
 
 .footer-section {
@@ -262,7 +264,9 @@ footer {
 
 .social-icons {
     display: flex;
+    justify-content: center; /* Center the icons */
     gap: 10px;
+    margin-top: 20px; /* Add some spacing at the top */
 }
 
 .social-icons a img {
