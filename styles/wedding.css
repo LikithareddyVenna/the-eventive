@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-     background: url('images/wedding1.jpg') repeat; /* Update the path if necessary */
+     background: url('../images/background pattern.png') repeat; /* Update the path if necessary */
      background-size: auto; /* Adjust the size as needed */
      background-color: #0C1B32; /* Fallback color in case the image doesn't load */
     
