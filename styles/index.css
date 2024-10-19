@@ -207,20 +207,6 @@ button.next {
     border: 4px solid #fff;
 }
 
-.contact-us {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-us:hover {
-    background-color: #0056b3;
-}
 
 
 footer {
