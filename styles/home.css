@@ -265,6 +265,66 @@ button.next {
     background-color: #005599;
 }
 
+.about-founder-container {
+    padding: 50px;
+    background-color: #f4f4f4; /* Background color for the section */
+}
+
+.about-founder h2 {
+    text-align: center;
+    color: #D9225E;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.founder-section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.founder-text {
+    flex: 2; /* Takes up more space for text */
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.founder-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #D9225E;
+    margin-bottom: 15px;
+}
+
+.profile h3 {
+    color: #D9225E;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.profile p {
+    color: #333;
+    font-size: 1rem;
+    margin: 0;
+}
+
 
 
 
