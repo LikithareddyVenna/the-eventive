@@ -138,6 +138,36 @@ button.next {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+
+.about {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #555;
+}
+.about button {
+   padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.about button:hover {
+    background-color: #004494;
+}  
+
 footer {
     background-color: #191970; /* Midnight blue */
     color: #fff;
