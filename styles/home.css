@@ -398,3 +398,95 @@ footer {
 .social-icons a img:hover {
     filter: invert(60%) sepia(100%) saturate(1000%) hue-rotate(-20deg); /* Color on hover */
 }
+
+/* General Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* About Us Section */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .about-text .btn {
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+
+    .about-images {
+        flex-basis: 100%;
+        display: block; /* Stack the images vertically */
+    }
+
+    .about-images img {
+        width: 100%;
+        margin-bottom: 15px; /* Add space between images */
+        border-radius: 10px;
+    }
+
+    /* Our Services Section */
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 90%; /* Make service boxes take up more width */
+        margin-bottom: 20px;
+    }
+
+    .service-box img {
+        height: auto; /* Let images resize naturally */
+    }
+
+    /* Founder Section */
+    .founder-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .founder-text {
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
