@@ -428,6 +428,7 @@ footer {
         top: 15px;
         right: 15px;
         cursor: pointer;
+        z-index: 1001;
     }
 
     .hamburger div {
@@ -435,8 +436,26 @@ footer {
         height: 3px;
         background-color: #fff;
         margin: 5px 0;
-        transition: 0.4s;
+        transition: all 0.4s ease;
     }
+
+    
+/* Transform hamburger lines to form an X */
+.hamburger.active div:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0; /* Hide the middle line */
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+}
 
     /* Show menu on click (toggle menu visibility) */
     .navbar.active nav ul {
