@@ -401,16 +401,58 @@ footer {
 
 /* General Media Query for Mobile Devices */
 @media (max-width: 768px) {
-    
-    /* Navbar */
+    /* Navbar / Header */
     .navbar {
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
         padding: 10px;
+        position: relative;
     }
 
+    /* Center the logo in the header */
+    .logo img {
+        max-height: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Hide the navigation menu items */
     .navbar nav ul {
+        display: none;
+    }
+
+    /* Create hamburger icon */
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    /* Show menu on click (toggle menu visibility) */
+    .navbar.active nav ul {
+        display: flex;
         flex-direction: column;
-        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #0C1B32;
+        width: 150px;
+        padding: 10px;
+        z-index: 100;
+    }
+
+    .navbar.active nav ul li {
+        padding: 10px;
     }
 
     /* About Us Section */
@@ -438,55 +480,15 @@ footer {
         font-size: 1rem;
     }
 
+    /* Stack the images vertically below the "Know More" button */
     .about-images {
-        flex-basis: 100%;
-        display: block; /* Stack the images vertically */
+        display: block;
+        width: 100%;
     }
 
     .about-images img {
         width: 100%;
-        margin-bottom: 15px; /* Add space between images */
+        margin-bottom: 15px;
         border-radius: 10px;
     }
-
-    /* Our Services Section */
-    .services-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-box {
-        width: 90%; /* Make service boxes take up more width */
-        margin-bottom: 20px;
-    }
-
-    .service-box img {
-        height: auto; /* Let images resize naturally */
-    }
-
-    /* Founder Section */
-    .founder-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .founder-text {
-        margin-bottom: 20px;
-    }
-
-    /* Footer */
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-section {
-        margin-bottom: 20px;
-    }
-
-    .social-icons {
-        justify-content: center;
-    }
 }
-
