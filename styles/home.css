@@ -491,3 +491,22 @@ footer {
         margin-bottom: 15px;
         border-radius: 10px;
     }
+
+     .carousel {
+        height: 400px; /* Reduced height for mobile */
+    }
+
+    .carousel-images {
+        height: 400px;
+    }
+
+    .carousel-images img {
+        object-fit: cover; /* Ensures the image still covers the container */
+    }
+
+    /* Reduce size of buttons on smaller screens */
+    button.prev, button.next {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+}
