@@ -378,38 +378,45 @@ footer {
         padding: 10px;
     }
 
-    /* About Us Section */
-    .about-container {
-        flex-direction: column;
+  /* Styling for the About Us section in mobile view */
+    .about-us-section {
+        display: flex;
+        flex-direction: column; /* Vertical layout */
+        align-items: center; /* Center items horizontally */
+        padding: 20px;
+    }
+
+    .about-us-section h2 {
+        font-size: 1.5em; /* Adjust heading size for mobile */
+        margin-bottom: 15px;
         text-align: center;
     }
 
-    .about-text {
-        flex-basis: 100%;
-        padding: 10px;
-    }
-
-    .about-text h2 {
-        font-size: 2rem;
-    }
-
-    .about-text p {
-        font-size: 1rem;
+    .about-us-section p {
+        font-size: 1em; /* Adjust text size */
         line-height: 1.6;
+        text-align: justify;
+        margin-bottom: 20px;
     }
 
+    .about-us-section ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
 
-    /* Stack the images vertically below the "Know More" button */
-    .about-images {
+    .about-us-section ul li {
+        font-size: 1em;
+        margin-bottom: 10px; /* Ensure each bullet point is spaced out */
+    }
+
+    .about-us-photo {
+        width: 100%;
+        max-width: 300px; /* Adjust image size */
+        margin: 0 auto; /* Center the image */
         display: block;
-        width: 100%;
     }
 
-    .about-images img {
-        width: 100%;
-        margin-bottom: 15px;
-        border-radius: 10px;
-    }
 
      .carousel {
         height: 200px; /* Reduced height for mobile */
