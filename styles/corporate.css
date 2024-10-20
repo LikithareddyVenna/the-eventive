@@ -115,7 +115,7 @@ body {
     max-height: 100%;
     flex-shrink: 0;
     object-fit: contain;
-    min-width: 100px;
+  
 }
 
 button.prev,button.next {
