@@ -498,12 +498,14 @@ footer {
         width: 100%;
         margin: auto;
         overflow: hidden;
+        max-height: 400px;
     }
 
     .carousel-images img {
         width: 100%; /* Make images fit the screen width */
         height: auto; /* Maintain aspect ratio */
         object-fit: contain; /* Prevent cropping */
+        max-height: 400px;
     }
 
     .carousel-container button {
