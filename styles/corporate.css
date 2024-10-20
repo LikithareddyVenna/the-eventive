@@ -80,16 +80,66 @@ body {
 
 
 
-/* Hero Section */
-.hero {
+.carousel {
     position: relative;
-    height: 500px;
-    background-color: #1E90FF;
-}
-.hero img {
     width: 100%;
+    overflow: hidden;
+    z-index: 1; /* Make sure the carousel stays below the dropdown */
+    height: 400px;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel-images {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    max-width: 100%;
+    scrollbar-width: none; /* For Firefox */
+    z-index: 1; /* Set a lower z-index than the dropdown */
+}
+
+.carousel-images::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+
+.carousel-images img {
+    width: 100vw;
     height: 100%;
+    flex-shrink: 0;
     object-fit: cover;
+    min-width: 100px;
+}
+
+button.prev,button.next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 10px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Wedding Info Section */
