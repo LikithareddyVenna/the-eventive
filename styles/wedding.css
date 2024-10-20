@@ -379,44 +379,45 @@ footer {
     }
 
   /* Styling for the About Us section in mobile view */
-    .about-us-section {
+      .about-us {
         display: flex;
-        flex-direction: column; /* Vertical layout */
-        align-items: center; /* Center items horizontally */
-        padding: 20px;
-    }
-
-    .about-us-section h2 {
-        font-size: 1.5em; /* Adjust heading size for mobile */
-        margin-bottom: 15px;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
-    .about-us-section p {
-        font-size: 1em; /* Adjust text size */
-        line-height: 1.6;
-        text-align: justify;
+    .about-us-content {
+        order: 1; /* Heading and text */
+    }
+
+    .about-us-content h2 {
+        font-size: 24px;
+    }
+
+    .about-us-content p {
+        font-size: 16px;
         margin-bottom: 20px;
     }
 
-    .about-us-section ul {
+    .about-us-content ul {
         list-style-type: disc;
         padding-left: 20px;
+        text-align: left;
         margin-bottom: 20px;
     }
 
-    .about-us-section ul li {
-        font-size: 1em;
-        margin-bottom: 10px; /* Ensure each bullet point is spaced out */
+    .about-us-content ul li {
+        margin-bottom: 10px;
+        font-size: 16px;
     }
 
-    .about-us-photo {
-        width: 100%;
-        max-width: 300px; /* Adjust image size */
-        margin: 0 auto; /* Center the image */
-        display: block;
+    .about-us img {
+        order: 2;
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 10px;
     }
-
 
      .carousel {
         height: 200px; /* Reduced height for mobile */
