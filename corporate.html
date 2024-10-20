@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Eventive</title>
     <link rel="stylesheet" href="styles/corporate.css"> 
+    <script src="scripts/carousel.js" defer></script>
 </head>
 <body>
     <header>
@@ -33,13 +34,20 @@
         </div>
     </header>
 
-   <!-- Hero Section -->
-    <section class="hero">
-        <div class="slider-container">
-            <img src="images/socialevent1.jpeg" alt="Event Banner">
+   <section class="carousel">
+        <div class="carousel-container">
+            <button class="prev" onclick="scrollCarousel(-1)">&#10094;</button>
+            <div class="carousel-images" id="carouselImages">
+                <img src="images/corporate5.jpeg" alt="Event 1">
+                <img src="images/corporate4.jpeg" alt="Event 2">
+                <img src="images/corporate7.jpeg" alt="Event 3">
+                <img src="images/corporate8.jpeg" alt="Event 4">
+                <img src="images/corporate6.jpeg" alt="Event 5">
+            </div>
+            <button class="next" onclick="scrollCarousel(1)">&#10095;</button>
         </div>
     </section>
-
+    
     <!-- New Section for Wedding Information -->
     <section class="wedding-info">
         <div class="wedding-info-container">
