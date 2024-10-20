@@ -84,6 +84,7 @@ body {
     width: 100%;
     overflow: hidden;
     z-index: 1; /* Make sure the carousel stays below the dropdown */
+    height: 750px;
 }
 
 .carousel-container {
