@@ -303,3 +303,129 @@ footer {
     text-align: center;
     font-weight: bold;
 }
+/* General Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    /* Navbar / Header */
+    .navbar {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        position: relative;
+    }
+
+    /* Center the logo in the header */
+    .logo img {
+        max-height: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Hide the navigation menu items */
+    .navbar nav ul {
+        display: none;
+    }
+
+    /* Create hamburger icon */
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+        transition: all 0.4s ease;
+    }
+
+    
+/* Transform hamburger lines to form an X */
+.hamburger.active div:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0; /* Hide the middle line */
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+}
+
+    /* Show menu on click (toggle menu visibility) */
+    .navbar.active nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #0C1B32;
+        width: 150px;
+        padding: 10px;
+        z-index: 100;
+    }
+
+    .navbar.active nav ul li {
+        padding: 10px;
+    }
+
+    /* About Us Section */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+
+    /* Stack the images vertically below the "Know More" button */
+    .about-images {
+        display: block;
+        width: 100%;
+    }
+
+    .about-images img {
+        width: 100%;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+     .carousel {
+        height: 200px; /* Reduced height for mobile */
+    }
+
+    .carousel-images {
+        height: 200px;
+    }
+
+    .carousel-images img {
+        object-fit: cover; /* Ensures the image still covers the container */
+    }
+
+    /* Reduce size of buttons on smaller screens */
+    button.prev, button.next {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+}
