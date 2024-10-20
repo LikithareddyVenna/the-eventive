@@ -110,7 +110,7 @@ body {
 
 .carousel-images img {
     width: 100vw;
-    height: 750px;
+    height: 50vh;
     flex-shrink: 0;
     object-fit:cover;
     min-width:100px;
