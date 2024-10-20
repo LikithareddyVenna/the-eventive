@@ -491,4 +491,41 @@ footer {
         margin-bottom: 15px;
         border-radius: 10px;
     }
+
+    /* Carousel styles for mobile */
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .carousel-images img {
+        width: 100%; /* Make images fit the screen width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: contain; /* Prevent cropping */
+    }
+
+    .carousel-container button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .carousel-container button.prev {
+        left: 5px;
+    }
+
+    .carousel-container button.next {
+        right: 5px;
+    }
+
+    .carousel-container button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
 }
