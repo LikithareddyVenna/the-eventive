@@ -356,4 +356,50 @@ footer {
     .navbar.active nav ul li {
         padding: 10px;
     }
+        .services-container {
+        display: flex;
+        flex-direction: column; /* Stack buttons and descriptions vertically */
+        align-items: center;
+    }
+
+    .services-buttons {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
+        width: 100%; /* Full width for better touch interaction */
+    }
+
+    .service-btn {
+        width: 100%;
+        padding: 10px;
+        text-align: center; /* Center the button text */
+        background-color: #f0f0f0; /* Button background */
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem; /* Slightly larger font for better readability */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .service-btn.active {
+        background-color: #333; /* Highlight active button */
+        color: #fff; /* White text for contrast */
+    }
+
+    .services-description {
+        width: 100%; /* Ensure description takes full width */
+        margin-top: 10px;
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque background for better readability */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle pop */
+        border-radius: 5px;
+    }
+
+    .service-description {
+        display: none; /* Hide descriptions by default */
+    }
+
+    .service-description.active {
+        display: block; /* Only show the active description */
+    }
 }
