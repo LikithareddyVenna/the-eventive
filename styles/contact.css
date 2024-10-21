@@ -297,7 +297,19 @@ footer {
      .contact-container {
         flex-direction: column; /* Stack the elements vertically */
     }
-
+    
+    .contact-info {
+        text-align: center;
+    }
+    
+    .get-in-touch {
+        text-align:center;
+    }
+    
+    .get-in-touch h2 {
+        text-align: center;
+    }
+    
     .contact-info,
     .get-in-touch {
         width: 100%; /* Make them take up the full width */
