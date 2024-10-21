@@ -377,37 +377,37 @@ footer {
     .navbar.active nav ul li {
         padding: 10px;
     }
-
-     .about-us {
+.about-us {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-        padding: 15px;
+        align-items: flex-start; /* Align content to the left */
+        text-align: left;  /* Ensure left text alignment */
+        padding: 20px; /* Increase padding for better spacing */
+        gap: 20px; /* Space between sections */
     }
 
     .about-us-content {
         width: 100%;
+        max-width: 600px; /* Max width for readability */
     }
 
     .about-us-content h2 {
-        font-size: 22px;
-        margin-bottom: 10px;
+        font-size: 24px;
+        color: #d92b7b; /* Adjust heading color */
+        margin-bottom: 15px; /* More spacing under heading */
     }
 
     .about-us-content p {
         font-size: 16px;
-        margin-bottom: 20px;
+        margin-bottom: 15px; /* Space below paragraph */
         line-height: 1.6;
+        padding-right: 10px; /* Add right padding for better look */
     }
 
     .about-us-content ul {
         list-style-type: disc;
-        padding-left: 0;
-        text-align: left;
-        margin: 0 auto 20px;
-        max-width: 300px;
+        padding-left: 20px;
+        margin-bottom: 20px;
     }
 
     .about-us-content ul li {
@@ -416,11 +416,11 @@ footer {
     }
 
     .about-us img {
-        max-width: 100%;
+        max-width: 100%; /* Ensure image fits container */
         height: auto;
-        margin-top: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 15px;
+        border-radius: 10px; /* Smooth corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
     }
     
      .carousel {
