@@ -361,45 +361,44 @@ footer {
         flex-direction: column; /* Stack buttons and descriptions vertically */
         align-items: center;
     }
-
-    .services-buttons {
+.services-container {
         display: flex;
-        flex-direction: column; /* Stack buttons vertically */
+        flex-direction: column;
         gap: 10px;
-        width: 100%; /* Full width for better touch interaction */
+    }
+
+    .service-item {
+        width: 100%;
     }
 
     .service-btn {
         width: 100%;
         padding: 10px;
-        text-align: center; /* Center the button text */
-        background-color: #f0f0f0; /* Button background */
+        text-align: center;
+        background-color: #f0f0f0;
         border: none;
         border-radius: 5px;
-        font-size: 1rem; /* Slightly larger font for better readability */
+        font-size: 1rem;
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
 
     .service-btn.active {
-        background-color: #333; /* Highlight active button */
-        color: #fff; /* White text for contrast */
-    }
-
-    .services-description {
-        width: 100%; /* Ensure description takes full width */
-        margin-top: 10px;
-        padding: 15px;
-        background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque background for better readability */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle pop */
-        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
     }
 
     .service-description {
-        display: none; /* Hide descriptions by default */
+        display: none;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
     }
 
     .service-description.active {
-        display: block; /* Only show the active description */
+        display: block;
     }
+   
 }
