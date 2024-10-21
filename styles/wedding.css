@@ -384,7 +384,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: left;
         gap: 20px; /* Spacing between elements */
     }
 
@@ -400,6 +400,7 @@ footer {
     .about-us-content p {
         font-size: 16px;
         margin-bottom: 20px; /* Space below paragraph */
+        line-height:1.6;
     }
 
     .about-us-content ul {
