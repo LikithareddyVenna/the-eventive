@@ -282,33 +282,78 @@ footer {
     font-weight: bold;
 }
 
-/* Responsive Design */
+/* General Media Query for Mobile Devices */
 @media (max-width: 768px) {
-    nav ul {
-        text-align: center;
+    /* Navbar / Header */
+    .navbar {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        position: relative;
     }
 
-    nav ul li {
+    /* Center the logo in the header */
+    .logo img {
+        max-height: 80px;
         display: block;
-        margin: 10px 0;
+        margin: 0 auto;
     }
 
-    .feature-cards, .team-members {
-        flex-direction: column;
-        align-items: center;
+    /* Hide the navigation menu items */
+    .navbar nav ul {
+        display: none;
     }
 
-    .card, .member {
-        width: 80%;
+    /* Create hamburger icon */
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        z-index: 1001;
     }
+
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+        transition: all 0.4s ease;
+    }
+
+    
+/* Transform hamburger lines to form an X */
+.hamburger.active div:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
 }
 
-@media (max-width: 480px) {
-    .overlay {
-        padding: 80px 20px;
+.hamburger.active div:nth-child(2) {
+    opacity: 0; /* Hide the middle line */
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+}
+
+    /* Show menu on click (toggle menu visibility) */
+    .navbar.active nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #0C1B32;
+        width: 150px;
+        padding: 10px;
+        z-index: 100;
     }
 
-    .logo {
-        height: 40px;
+    .navbar.active nav ul li {
+        padding: 10px;
     }
 }
