@@ -303,10 +303,11 @@ footer {
     }
     
     .get-in-touch {
-        text-align:center;
+        text-align: center;
     }
     
     .get-in-touch h2 {
+        margin: 0 auto;
         text-align: center;
     }
     
