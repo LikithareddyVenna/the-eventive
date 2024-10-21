@@ -15,9 +15,14 @@
                 <img src="images/logo1.png" alt="The Eventive Logo">
  
             </div>
+             <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="home">Home</a></li>
+                    <li><a href="index">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li class="dropdown">
                         <a href="services.html" class="dropbtn">Services</a>
@@ -130,5 +135,11 @@
     </div>
         <a href="contact.html" class="contact-icon">Contact Us</a>
     </footer>
+    
+     <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.navbar').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
