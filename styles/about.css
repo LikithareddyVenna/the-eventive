@@ -356,49 +356,33 @@ footer {
     .navbar.active nav ul li {
         padding: 10px;
     }
-        .services-container {
-        display: flex;
-        flex-direction: column; /* Stack buttons and descriptions vertically */
-        align-items: center;
-    }
-.services-container {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+      /* Services Section Styles for Mobile */
+    .services-container {
+        display: block;
     }
 
-    .service-item {
+    .services-buttons {
         width: 100%;
+        margin-bottom: 10px;
     }
 
     .service-btn {
         width: 100%;
-        padding: 10px;
         text-align: center;
-        background-color: #f0f0f0;
-        border: none;
-        border-radius: 5px;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+        margin-bottom: 5px;
     }
 
-    .service-btn.active {
-        background-color: #333;
-        color: #fff;
-    }
-
-    .service-description {
-        display: none;
-        margin-top: 10px;
+    .services-description {
+        display: none; /* Initially hide all descriptions */
+        width: 100%;
+        margin-top: 5px;
         padding: 10px;
         background-color: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     .service-description.active {
-        display: block;
+        display: block; /* Show the selected description */
     }
-   
 }
