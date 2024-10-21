@@ -328,3 +328,141 @@ footer {
     text-align: center;
     font-weight: bold;
 }
+/* General Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    /* Navbar / Header */
+    .navbar {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        position: relative;
+    }
+
+    /* Center the logo in the header */
+    .logo img {
+        max-height: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Hide the navigation menu items */
+    .navbar nav ul {
+        display: none;
+    }
+
+    /* Create hamburger icon */
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+        transition: all 0.4s ease;
+    }
+
+    
+/* Transform hamburger lines to form an X */
+.hamburger.active div:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0; /* Hide the middle line */
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+}
+
+    /* Show menu on click (toggle menu visibility) */
+    .navbar.active nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #0C1B32;
+        width: 150px;
+        padding: 10px;
+        z-index: 100;
+    }
+
+    .navbar.active nav ul li {
+        padding: 10px;
+    }
+.about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align content to the left */
+        text-align: left;  /* Ensure left text alignment */
+        padding: 20px; /* Increase padding for better spacing */
+        gap: 20px; /* Space between sections */
+    }
+
+    .about-us-content {
+        width: 100%;
+        max-width: 600px; /* Max width for readability */
+    }
+
+    .about-us-content h2 {
+        font-size: 24px;
+        margin-bottom: 15px; /* More spacing under heading */
+    }
+
+    .about-us-content p {
+        font-size: 16px;
+        margin-bottom: 15px; /* Space below paragraph */
+        line-height: 1.6;
+        padding-right: 10px; /* Add right padding for better look */
+    }
+
+    .about-us-content ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about-us-content ul li {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .about-us img {
+        max-width: 100%; /* Ensure image fits container */
+        height: auto;
+        margin-top: 15px;
+        border-radius: 10px; /* Smooth corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    }
+    
+     .carousel {
+        height: 200px; /* Reduced height for mobile */
+    }
+
+    .carousel-images {
+        height: 200px;
+    }
+
+    .carousel-images img {
+        object-fit: cover; /* Ensures the image still covers the container */
+    }
+
+    /* Reduce size of buttons on smaller screens */
+    button.prev, button.next {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+}
+
