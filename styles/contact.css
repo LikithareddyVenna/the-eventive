@@ -294,3 +294,13 @@ footer {
     .navbar.active nav ul li {
         padding: 10px;
     }
+     .contact-container {
+        flex-direction: column; /* Stack the elements vertically */
+    }
+
+    .contact-info,
+    .get-in-touch {
+        width: 100%; /* Make them take up the full width */
+        margin-bottom: 20px; /* Add space between stacked sections */
+    }
+}
