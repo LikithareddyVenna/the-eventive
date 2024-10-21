@@ -391,6 +391,7 @@ footer {
 
     .about-us-content {
         width: 100%; /* Full width */
+        padding:0 20px;
     }
 
     .about-us-content h2 {
@@ -408,11 +409,14 @@ footer {
         padding-left: 20px;
         text-align: left;
         margin-bottom: 20px;
+        width: 100%;
     }
 
     .about-us-content ul li {
         margin-bottom: 10px;
         font-size: 16px;
+        list-style-position: inside; /* Ensures bullets are inside and aligned properly */
+        display: block; /* This ensures each bullet takes up the full width and aligns vertically */
     }
 
     .about-us img {
