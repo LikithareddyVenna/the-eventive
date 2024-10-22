@@ -399,6 +399,20 @@ footer {
     filter: invert(60%) sepia(100%) saturate(1000%) hue-rotate(-20deg); /* Color on hover */
 }
 
+/* Contact Us Icon */
+.contact-icon {
+    background-color: #1E90FF;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
 /* General Media Query for Mobile Devices */
 @media (max-width: 768px) {
     /* Navbar / Header */
