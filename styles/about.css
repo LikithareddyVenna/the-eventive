@@ -87,7 +87,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #0C1B32; /* Ensures the text is readable against the background */
+    color: white; /* Ensures the text is readable against the background */
     text-align: center; /* Centers the text horizontally */
 }
 
