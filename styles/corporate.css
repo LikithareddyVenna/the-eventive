@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #0C1B32;
+    background-color: auto;
 }
 
 .navbar {
@@ -145,9 +145,11 @@ button.next {
 
 /* Wedding Info Section */
 .wedding-info {
-    background-color: #f0f8ff;
+    background-color: rgba(240, 248, 255, 0.9); /* Semi-transparent overlay for readability */
     padding: 50px;
     text-align: center;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 .wedding-info-container {
@@ -172,7 +174,9 @@ button.next {
 
 .about-us-container {
     padding: 50px;
-    background-color: #f0f8ff;
+    background-color: rgba(240, 248, 255, 0.9); /* Semi-transparent overlay for readability */
+    border-radius: 10px;
+    margin: 20px;
 }
 
 .about-us {
