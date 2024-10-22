@@ -357,32 +357,56 @@ footer {
         padding: 10px;
     }
       /* Services Section Styles for Mobile */
-    .services-container {
-        display: block;
-    }
+ .services-section {
+    display: block;
+  }
 
-    .services-buttons {
-        width: 100%;
-        margin-bottom: 10px;
-    }
+  .services-buttons {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .service-btn {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 5px;
-    }
+  .service-btn {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #f5f5f5;
+    color: #333;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+  }
 
-    .services-description {
-        display: none; /* Initially hide all descriptions */
-        width: 100%;
-        margin-top: 5px;
-        padding: 10px;
-        background-color: rgba(255, 255, 255, 0.9);
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
+  .service-description {
+    display: none;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+  }
 
-    .service-description.active {
-        display: block; /* Show the selected description */
+  .service-description.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+  }
+
+  /* Adjust spacing for buttons and descriptions on mobile */
+  .services-container {
+    padding: 0 10px;
+  }
+
+  .services-buttons button.active + .service-description {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
     }
+    to {
+      opacity: 1;
+    }
+  }
 }
