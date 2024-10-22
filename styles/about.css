@@ -381,8 +381,6 @@ footer {
 
   .service-description {
     display: none;
-    padding: 15px;
-    background-color: #ffffff;
     border: 1px solid #ddd;
     margin-top: 10px;
   }
