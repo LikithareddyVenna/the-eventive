@@ -1,7 +1,9 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-size: auto;  /* Adjust the size as needed */
+     background-size: auto;  /* Adjust the size as needed */
+    
+    
 }
 
 .navbar {
@@ -11,11 +13,11 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;   /* Ensure the navbar is positioned relative to its parent */
-    z-index: 2;   /* Set  a base z-index to keep the navbar above most content */
+    z-index: 2;    /* Set  a base z-index to keep the navbar above most content */
 }
 
 .logo img {
-   max-height: 100px;   /* Adjust height to fit */
+   max-height: 100px; /* Adjust height to fit */
 }
 
 .navbar nav ul {
@@ -76,8 +78,6 @@ body {
 .dropdown-content a:visited {
     color: #004494; /* Blue color for dropdown links (default state) */
 }
-
-
 
 .carousel {
     position: relative;
@@ -170,10 +170,6 @@ button.next {
 }
 
 
-
-
-
-
 /* About Us Section */
 
 .about-us-container {
@@ -226,7 +222,6 @@ button.next {
     object-fit: cover;
     border-radius: 10px;
 }
-
 
 /* Footer */
 footer {
@@ -445,4 +440,3 @@ footer {
         padding: 5px;
     }
 }
-
